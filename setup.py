@@ -1,11 +1,17 @@
 from setuptools import setup, find_packages
 
+
+with open("Readme.md", "r", encoding="utf8") as f:
+    long_description = f.read()
+
+
 options = {
     "name": "thin_ws_server",
-    "version": "0.0.5",
+    "version": "1.0.0",
     "author": "atoy322",
-    "description": "",
-    "long_description": "",
+    "description": "small implementation of websocket server.",
+    "long_description": long_description,
+    "url": "https://github.com/atoy322/ws_server",
     "packages": find_packages()
 }
 
