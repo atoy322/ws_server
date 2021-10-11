@@ -7,7 +7,7 @@ with open("Readme.md", "r", encoding="utf8") as f:
 
 options = {
     "name": "thin_ws_server",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "atoy322",
     "description": "small implementation of websocket server.",
     "long_description": long_description,
