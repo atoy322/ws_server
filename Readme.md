@@ -2,11 +2,16 @@
 You can use this program for various way.
 For example, communicate with browser's JavaScript, send command request to minecraft ("/connect HOST:PORT" command).
 
+## How to install
+```shell
+pip install thin-ws-server
+```
+
 ## Usage
 ```python
 from thin_ws_server import WebSocketServer
 
-ws = WebSocketServer(8000)  # initialize
+ws = WebSocketServer(8000)  # initialize with port number
 ws.accept()  # accept client connection
 
 ws.send(data)  # data: str or bytes
