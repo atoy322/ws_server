@@ -4,7 +4,7 @@ For example, communicate with browser's JavaScript, send command request to mine
 
 ## Usage
 ```python
-from websocket_server import WebSocketServer
+from thin_ws_server import WebSocketServer
 
 ws = WebSocketServer(8000)  # initialize
 ws.accept()  # accept client connection
@@ -12,4 +12,3 @@ ws.accept()  # accept client connection
 ws.send(data)  # data: str or bytes
 ws.recv()  # returns bytes
 ```
-
