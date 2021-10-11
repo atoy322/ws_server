@@ -11,6 +11,7 @@ options = {
     "author": "atoy322",
     "description": "small implementation of websocket server.",
     "long_description": long_description,
+    "long_description_content_type": "text/markdown",
     "url": "https://github.com/atoy322/ws_server",
     "packages": find_packages()
 }
