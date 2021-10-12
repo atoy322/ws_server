@@ -1,5 +1,5 @@
 # Small websocket server implementation
-You can use this program for various way.
+You can use this program for various uses.
 For example, communicate with browser's JavaScript, send command request to minecraft ("/connect HOST:PORT" command).
 
 ## How to install
