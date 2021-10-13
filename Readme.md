@@ -6,11 +6,12 @@ For example, communicate with browser's JavaScript, send command request to mine
 - [remote_minecraft](https://github.com/atoy322/remote_minecraft)
 - developing...
 
+---
 ## How to install
 ```shell
 pip install thin-ws-server
 ```
-
+---
 ## Usage
 ```python
 from thin_ws_server import WebSocketServer
