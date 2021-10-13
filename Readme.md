@@ -3,7 +3,7 @@ You can use this program for various uses.
 For example, communicate with browser's JavaScript, send command request to minecraft ("/connect HOST:PORT" command).
 
 ### example
-<li>[remote_minecraft](https://github.com/atoy322/remote_minecraft)</li>
+<li> [remote_minecraft](https://github.com/atoy322/remote_minecraft) </li>
 <li>developing...</li>
 
 ## How to install
