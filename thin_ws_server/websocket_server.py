@@ -123,19 +123,23 @@ class WebSocketServer:
 
         _, _, opcode, _, payload_length = parse_frame(frame)
 
-        """
+        
         if opcode == 1:
-            print("this is text frame.")
+            #print("this is text frame.")
+            pass
         elif opcode == 2:
-            print("this is binary frame.")
+            #print("this is binary frame.")
+            pass
         elif opcode == 8:
-            print("this is close frame.")
-            # raise Exception("Connection closed")
+            #print("this is close frame.")
+            raise Exception("Connection closed")
         elif opcode == 9:
-            print("this is ping frame.")
+            #print("this is ping frame.")
+            pass
         elif opcode == 10:
-            print("this is pong frame.")
-        """
+            #print("this is pong frame.")
+            pass
+        
 
         if payload_length == 126:
             payload_length = self.conn.recv(2)
@@ -156,7 +160,8 @@ class WebSocketServer:
         return mask(mask_key, buf)
 
     def close(self):
-        self.sock.close()
+        self.conn.send(b"\x88\x00")  # FIN=1 RSV=000 OPCODE=1000 MASK=0
+        self.conn.close()
 
 
 if __name__ == "__main__":
